@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root to: "ideas#index"
 
-  resources :ideas
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :ideas do
+  resources :comments
+end# For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
